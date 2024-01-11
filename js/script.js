@@ -18,3 +18,13 @@ window.onscroll = () => {
     menu.classList.remove('bx-x');
     navlist.classList.remove('open');
 }
+
+// ScrollReveal
+const sr = ScrollReveal({
+    origin: 'top',
+    distance: '85px',
+    duration: 2500,
+    reset: false
+});
+
+sr.reveal('.home-text, .home-img, .container, .about-img, .about-text, .middle-text, .row-btn, .shop-content, .review, .contact', {delay:300});
