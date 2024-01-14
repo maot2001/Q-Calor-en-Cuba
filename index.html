@@ -7,6 +7,7 @@
   <link rel="icon" href="img/favicon.ico" type="ico">
   <link rel="stylesheet" href="css/style.css">
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link href="assets/c3-0.7.20/c3.css" rel="stylesheet">
 </head>
 <body>
   
@@ -45,7 +46,7 @@
   </section>
 
   <!-- Container -->
-  <section class="container">
+  <!-- <section class="container">
 
     <div class="container-box">
       <img src="img/prueba.jpg" alt="imagen">
@@ -65,13 +66,104 @@
       <a href="#">pedro</a>
     </div>
 
-  </section>
+  </section> -->
 
   <!-- About Us -->
   <section class="about" id="about">
 
-    <div class="about-img">
-      <img src="img/prueba.jpg" alt="imagen">
+    <div>
+      <div class="selectors">
+
+        <!-- <div>
+          <span>Año:</span>   
+          <select id="g1_year">
+            <option value="1990">1990</option>
+            <option value="1991">1991</option>
+            <option value="1992">1992</option>
+            <option value="1993">1993</option>
+            <option value="1994">1994</option>
+            <option value="1995">1995</option>
+            <option value="1996">1996</option>
+            <option value="1997">1997</option>
+            <option value="1998">1998</option>
+            <option value="1999">1999</option>
+            <option value="2000">2000</option>
+            <option value="2001">2001</option>
+            <option value="2002">2002</option>
+            <option value="2003">2003</option>
+            <option value="2004">2004</option>
+            <option value="2005">2005</option>
+            <option value="2006">2006</option>
+            <option value="2007">2007</option>
+            <option value="2008">2008</option>
+            <option value="2009">2009</option>
+            <option value="2010">2010</option>
+            <option value="2011">2011</option>
+            <option value="2012">2012</option>
+            <option value="2013">2013</option>
+            <option value="2014">2014</option>
+            <option value="2015">2015</option>
+            <option value="2016">2016</option>
+            <option value="2017">2017</option>
+            <option value="2018">2018</option>
+            <option value="2019">2019</option>
+            <option value="2020">2020</option>
+            <option value="2021">2021</option>
+            <option value="2022">2022</option>
+          </select>
+        </div> -->
+          
+        <div>
+          <span>Mes:</span> 
+          <select id="g1_month">
+            <option value="Enero">Enero</option>
+            <option value="Febrero">Febrero</option>
+            <option value="Marzo">Marzo</option>
+            <option value="Abril">Abril</option>
+            <option value="Mayo">Mayo</option>
+            <option value="Junio">Junio</option>
+            <option value="Julio">Julio</option>
+            <option value="Agosto">Agosto</option>
+            <option value="Septiembre">Septiembre</option>
+            <option value="Octubre">Octubre</option>
+            <option value="Noviembre">Noviembre</option>
+            <option value="Diciembre">Diciembre</option>
+          </select>
+        </div>
+        
+        <div>
+          <span>Provincia:</span> 
+          <select id="g1_prov">
+            <option value="Pinar del Río">Pinar del Río</option>
+            <option value="Artemisa">Artemisa</option>
+            <option value="La Habana">La Habana</option>
+            <option value="Mayabeque">Mayabeque</option>
+            <option value="Isla de la Juventud">Isla de la Juventud</option>
+            <option value="Matanzas">Matanzas</option>
+            <option value="Cienfuegos">Cienfuegos</option>
+            <option value="Villa Clara">Villa Clara</option>
+            <option value="Sancti Spíritus">Sancti Spíritus</option>
+            <option value="Ciego de Ávila">Ciego de Ávila</option>
+            <option value="Camagüey">Camagüey</option>
+            <option value="Las Tunas">Las Tunas</option>
+            <option value="Holguín">Holguín</option>
+            <option value="Granma">Granma</option>
+            <option value="Santiago de Cuba">Santiago de Cuba</option>
+            <option value="Guantánamo">Guantánamo</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- <div>
+        <span>Tipo:</span>
+        <select id="g1_type">
+          <option value="med">Temperatura media</option>
+          <option value="max">Temperatura máxima media</option>
+          <option value="min">Temperatura mínima media</option>
+        </select>
+      </div> -->
+
+      <canvas id="g1"></canvas>
     </div>
 
     <div class="about-text">
@@ -90,7 +182,7 @@
   </section>
 
   <!-- Shop -->
-  <section class="shop" id="shop">
+  <!-- <section class="shop" id="shop">
 
     <div class="middle-text">
       <h4>Titulo</h4>
@@ -156,10 +248,10 @@
 
     </div>
 
-  </section>
+  </section> -->
 
   <!-- Review -->
-  <section id="reviews">
+  <!-- <section id="reviews">
     <div class="middle-text">
       <h4>Client</h4>
       <h2>Review</h2>
@@ -214,10 +306,10 @@
       </div>
   
     </div>
-  </section>
+  </section> -->
 
   <!-- Contact -->
-  <section class="contact" id="contact">
+  <!-- <section class="contact" id="contact">
 
     <div class="contact-content">
       <div class="contact-text">
@@ -252,7 +344,7 @@
 
     </div>
 
-  </section>
+  </section> -->
 
   <!-- Scroll -->
   <a href="#" class="scroll">
@@ -261,10 +353,177 @@
 
 
 
-  <script src="https://unpkg.com/scrollreveal"></script>
+  <!-- <script src="https://unpkg.com/scrollreveal"></script> -->
   <script src="js/script.js"></script>
   <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
   <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+  <!-- <script src="assets/js/d3.min.js" charset="utf-8"></script>
+  <script src="assets/js/c3.js"></script> -->
 
+
+  <script>
+    const years = [];
+    const max = [];
+    const med = [];
+    const min = [];
+    let monthSelect = document.querySelector('#g1_month');
+    let provSelect = document.querySelector('#g1_prov');
+    //let typeSelect = document.querySelector('#g1_type');
+    let month = $('#g1_month').val();
+    let prov = $('#g1_prov').val();
+    //let type = $('#g1_type').val();
+    let graph1 = $('#g1');
+    var chart;
+
+    charge();
+    
+    function charge() {
+      fetch('data/data_line.json')
+      .then(response => {
+        if (!response.ok) {
+          throw new Error('Network response was not ok');
+        }
+        return response.json();
+      })
+      .then(base => {
+  
+        calculate(base)
+        
+        /*chart = c3.generate({
+        bindto: '#g1',
+        data: {
+            x: 'Años',
+          columns: [
+ ['Años','2009','2010','2011','2012','2014','2015','2016'],
+ ["Artículos",0,19600,50000,100000,135748,150000,164344],
+          ],
+          types: {
+           Artículos: 'spline',
+        },
+        colors: {
+                'Artículos': '#EE1C25',
+            }
+        },
+         axis: {
+            x: {
+                label: 'Años'
+            },
+            y: {
+                label: 'Total de Artículos',
+                position: 'outer-middle',
+            }
+        },
+        
+      });*/
+        chart = new Chart(graph1, {
+            type: 'line',
+            data: {
+                labels: years,
+                datasets:[
+                    {
+                        data: max,
+                        borderColor: "orange",
+                        fill: false
+                    },
+                    {
+                        data: med,
+                        borderColor: "yellow",
+                        fill: false
+                    },
+                    {
+                        data: min,
+                        borderColor: "blue",
+                        fill: false
+                    }
+                ]
+            },
+            options: {
+              responsive: true,
+              legend: {display: false}
+            }
+          });
+      })
+      .catch(error => console.error('Error:', error));
+    }
+
+    monthSelect.addEventListener('change', function() {
+      month = $('#g1_month').val();
+      charge();
+    });
+
+    provSelect.addEventListener('change', function() {
+      prov = $('#g1_prov').val();
+      charge();
+    });
+
+    /*typeSelect.addEventListener('change', function() {
+      type = $('#g1_type').val();
+      charge();
+    });*/
+
+    function calculate(data) {
+      for (let i = 0; i < data.months.length; i++) {
+        if (data.months[i].name == month) {
+          for (let j = 0; j < data.months[i].prov.length; j++) {
+            if (data.months[i].prov[j].name == prov) {
+              for (let k = 0; k < data.months[i].prov[j].years.length; k++) {
+                var num;
+                for (let l = 0; l < data.months[i].prov[j].years[k].stations.length; l++) {
+                  num = selectType(data.months[i].prov[j].years[k].stations);
+                }
+
+                years[k] = data.months[i].prov[j].years[k].year;
+                max[k] = num[0]; 
+                med[k] = num[2]; 
+                min[k] = num[3]; 
+              }
+              break;
+            }
+          }
+          break;
+        }
+      } 
+    }
+
+    function selectType(num, type) {
+      const response = [];
+      var med = 0;
+      var count = 0;
+      response[0] = Number.MIN_VALUE;
+      response[2] = null;
+      response[3] = Number.MAX_VALUE;
+
+      for (let i = 0; i < num.length; i++) {
+        if (num[i].temp != '') {
+          med += Number(num[i].temp);
+          count++;
+        }
+
+        if (num[i].temp_max != '') {
+          if (Number(num[i].temp_max) > response[0]) {
+            response[0] = Number(num[i].temp_max);
+            response[1] = num[i].name;
+          }
+        }
+
+        if (num[i].temp_min != '') {
+          if (Number(num[i].temp_min) < response[0]) {
+            response[3] = Number(num[i].temp_min);
+            response[4] = num[i].name;
+          }
+        }
+      }
+
+      if (count != 0) {
+        response[2] = med / count;
+      }
+      if (response[0] == Number.MIN_VALUE) response[0] = null;
+      if (response[3] == Number.MAX_VALUE) response[3] = null;
+      return response;
+    }
+
+  </script>
 </body>
 </html>

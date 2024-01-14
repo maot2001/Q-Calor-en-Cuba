@@ -1,10 +1,4 @@
-const header = document.querySelector('header');
-
-window.addEventListener('scroll', () => {
-    header.classList.toggle('sticky', this.window.scrollY > 80);
-});
-
-//Open Menu
+// Open Menu
 let menu = document.querySelector('#menu-icon');
 let navlist = document.querySelector('.navlist');
 
@@ -20,7 +14,7 @@ window.onscroll = () => {
 }
 
 // ScrollReveal
-const sr = ScrollReveal({
+/*const sr = ScrollReveal({
     origin: 'top',
     distance: '85px',
     duration: 2500,
@@ -28,3 +22,5 @@ const sr = ScrollReveal({
 });
 
 sr.reveal('.home-text, .home-img, .container, .about-img, .about-text, .middle-text, .row-btn, .shop-content, .review, .contact', {delay:300});
+
+*/

@@ -31,20 +31,16 @@ body {
 header {
     position: fixed;
     width: 100%;
+    height: 4vw;
     top: 0;
     right: 0;
     z-index: 100;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background: transparent;
+    background: var(--bg-color);
     padding: 3% 5%;
     transition: all 0.5s ease;
-}
-
-header.sticky {
-    padding: 12px 14%;
-    background: #d1d0d0;
 }
 
 .logo {
@@ -169,7 +165,7 @@ span {
     transform: scale(1.1) translateX(12px);
 }
 
-/* Container */
+/* Container 
 .container {
     padding: 5% 10%;
     display: grid;
@@ -205,12 +201,14 @@ span {
 
 .container-box a:hover {
     color: var(--main-color);
-}
+} */
 
-/* About Us */
+/* Graphics */
 .about {
+    padding: 5%;
+    width: 90%;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 80% 16%;
     align-items: center;
     gap: 4%;
 }
@@ -233,7 +231,24 @@ span {
     margin-bottom: 5%;
 }
 
-/* Shop */
+.selectors {
+    margin-top: 1%;
+    display: grid;
+    grid-template-columns: 20% 30%;
+    /* grid-template-rows: repeat(2, 1fr); */
+    gap: 3%;
+}
+  
+.selectors select {
+    padding: 5px;
+    font-size: 16px;
+ }
+
+canvas {
+    width: 40%;
+}
+
+/* Shop 
 .middle-text {
     text-align: center;
 }
@@ -313,9 +328,9 @@ span {
 .row-btn {
     text-align: center;
     margin-top: 6rem;
-}
+} */
 
-/* Review */
+/* Review 
 .reviews-content {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, auto));
@@ -366,9 +381,9 @@ span {
     color: var(--main-color);
     font-size: 18px;
     margin-right: 5px;
-}
+} */
 
-/* Contact */
+/* Contact 
 .contact-content {
     display: flex;
     align-items: center;
@@ -431,7 +446,7 @@ span {
     margin-right: 1%;
     font-size: 4vw;
     color: var(--main-color);
-}
+}*/
 
 /* Scroll */
 .scroll {
@@ -449,38 +464,7 @@ span {
     border-radius: 2rem;
 }
 
-/* Media 
-@media (max-width: 1545px) {
-
-    header {
-        padding: 22px 4%;
-        transition: .2s;
-    }
-    header.sticky {
-        padding: 14px 4%;
-        transition: .2s;
-    }
-    section {
-        padding: 50px 4% 40px;
-        transition: .2s;
-    }
-    .container {
-        padding: 30px 4% 50px;
-    }
-}
-
-@media (max-width: 1180px) {
-    :root {
-        --big-font: 4rem;
-        --h2-font: 2.2rem;
-        --p-font: 15px;
-    }
-    .home {
-        height: 85vh;
-    }
-}
-
-@media (max-width: 1076px) {
+@media (max-width: 800px) {
     #menu-icon {
         display: initial;
     }
@@ -504,4 +488,7 @@ span {
     .navlist.open {
         top: 100%;
     }
-} */
+    .about {
+        grid-template-columns: none;
+    }
+}
