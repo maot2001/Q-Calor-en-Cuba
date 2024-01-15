@@ -1,3 +1,5 @@
+//import data from 'data/data_line.json' assert {type: 'json'}
+
 // Open Menu
 let menu = document.querySelector('#menu-icon');
 let navlist = document.querySelector('.navlist');
@@ -14,13 +16,11 @@ window.onscroll = () => {
 }
 
 // ScrollReveal
-/*const sr = ScrollReveal({
+const sr = ScrollReveal({
     origin: 'top',
     distance: '85px',
     duration: 2500,
     reset: false
 });
 
-sr.reveal('.home-text, .home-img, .container, .about-img, .about-text, .middle-text, .row-btn, .shop-content, .review, .contact', {delay:300});
-
-*/
+sr.reveal('.home-text, .home-img, .graph, .contact', {delay:300});
