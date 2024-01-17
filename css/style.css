@@ -18,7 +18,6 @@
     --other-color: #d1d0d085;
     --text-color: #111;
 
-    --big-font: 5vw;
     --h2-font: 2vw;
     --p-font: 1vw;
 }
@@ -37,6 +36,14 @@ header {
     background: var(--bg-color);
     padding: 3% 5%;
     transition: all 0.5s ease;
+}
+
+section {
+    padding: 5% 5% 0%;
+}
+
+span {
+    color: var(--main-color);
 }
 
 .logo {
@@ -74,55 +81,67 @@ header {
 }
 
 .nav-icons {
-    display: flex;
-    align-items: center;
-    padding: 8px 15px;
+    display: none;
+    padding: .5% 1%;
+    margin-top: -1%;
     background: var(--main-color);
-    border-radius: 3rem;
+    border-radius: 2rem;
     box-shadow: #ff9f0d 0px 1px 25px;
 }
 
 #menu-icon {
-    font-size: 3vw;
-    color: var(--bg-color);
-    z-index: 100001;
+    font-size: 2vw;
+    color: var(--text-color);
     cursor: pointer;
-    display: none;
 }
 
 /* Home */
-section {
-    padding: 5% 10%;
-}
-
 .home {
     position: relative;
     height: 100%;
     width: 100%;
-    margin-top: 10%;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 20% 80%;
     align-items: center;
-    gap: 2%;
 }
 
 .home-img {
+    margin-top: -1%;
     width: 100%;
     height: auto;
 }
 
 .home-text h1 {
-    font-size: var(--big-font);
+    background-color: var(--main-color);
+    border-top-right-radius: 2rem;
+    border-top-left-radius: 2rem;
+    text-align: left;
+    font-size: var(--h2-font);
     font-weight: 30;
     line-height: 1.3;
-    margin-bottom: 3%;
 }
 
-span {
-    color: var(--main-color);
+.home-text p {
+    font-weight: 400;
+    margin-top: .5%;
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-bottom: 0%;
 }
 
-.btn {
+.home-text a {
+    font-size: var(--p-font);
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+/* Text */
+.text-img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 2%;
+}
+/*.btn {
     display: inline-block;
     padding: 1% 3%;
     background: var(--other-color);
@@ -159,7 +178,7 @@ span {
 
 .btn2:hover {
     transform: scale(1.1) translateX(12px);
-}
+}*/
 
 /* Container 
 .container {
@@ -214,7 +233,7 @@ span {
 .selectors {
     margin-top: 1%;
     display: grid;
-    grid-template-columns: 20% 30%;
+    grid-template-columns: 30% 30%;
     gap: 3%;
 }
 
@@ -501,7 +520,7 @@ span {
 }
 
 @media (max-width: 800px) {
-    #menu-icon {
+    .nav-icons {
         display: initial;
     }
     .navlist {
@@ -553,5 +572,5 @@ span {
     .values-legend {
         font-size: 50%;
         grid-template-rows: 9% 9% 10% 10% 10% 10% 9%;
-}
+    }
 }

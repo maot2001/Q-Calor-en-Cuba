@@ -74,7 +74,7 @@ function charge_prom() {
     r_calculate(base, provR, typeR)
     radarGraph()
 
-    enableEventHandlers(base)
+    enableEventHandlersRadar(base)
   })
   .catch(error => console.error('Error:', error));
 }
@@ -104,6 +104,7 @@ function radarGraph() {
 
 function r_calculate(data, prov, type) {
   for (let i = 0; i < data.months.length; i++) {
+    console.log(data.months[i].prov[Number(prov)], i, type)
     r_SelectType(data.months[i].prov[Number(prov)], i, type)
   }
 }
@@ -275,7 +276,6 @@ function g2_calculate(data, year, month, type) {
   for (let i = 0; i < data.months[Number(month)].prov.length; i++) {
     map[i] = g2_selectType(data.months[Number(month)].prov[i].years[Number(year)].stations, type)
   }
-  console.log(map)
 }
 
 function g2_selectType(num, type) {
@@ -383,7 +383,7 @@ function g3_selectType(num) {
   return response;
 }
 
-const enableEventHandlers = data => {
+const enableEventHandlersRadar = data => {
 
   document.querySelector('#r_prov').onchange = e => {
     const { value } = e.target.selectedOptions[0]
@@ -398,7 +398,9 @@ const enableEventHandlers = data => {
     r_calculate(data, prov, value)
     updateR('radar')
   }
-  
+
+}
+const enableEventHandlers = data => {
 
     document.querySelector('#g1_month').onchange = e => {
         
