@@ -23,4 +23,4 @@ const sr = ScrollReveal({
     reset: false
 });
 
-sr.reveal('.home-text, .home-img, .graph, .contact', {delay:300});
+sr.reveal('.home-text, .home-img, .graph, .text, .contact', {delay:300});

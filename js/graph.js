@@ -21,7 +21,7 @@ const updateR = (chartId) => {
 }
 
 const years = ["1990", "1991", "1992", "1993", "1994", "1995", "1996", "1997", "1998", "1999", "2000", "2001", "2002", "2003", "2004", "2005", "2006", "2007", "2008", "2009", "2010", "2011", "2012", "2013", "2014", "2015", "2016", "2017", "2018", "2019", "2020", "2021", "2022"];
-const map_colors = ["rgb(0, 34, 255)", "aqua", "rgba(0, 204, 204, 0.416)", "#929292", "#f26d079f", "#f26d07", "#f20707"]
+const map_colors = ["rgb(0, 34, 255)", "rgb(0, 143, 219)", "aqua", "#929292", "#f26d079f", "#f26d07", "#f20707"]
 const map_id = ["#CU01", "#CU15", "#CU03", "#CU16", "#CU99", "#CU04", "#CU06", "#CU05", "#CU07", "#CU08", "#CU09", "#CU10", "#CU11", "#CU12", "#CU13", "#CU14"]
 const months = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"]
 const max = []
@@ -86,14 +86,20 @@ function radarGraph() {
     datasets: [
       {
         label: "Década 1990-99",
+        borderColor: "#f20707c9",
+        backgroundColor: "#f207075f",
         data: prom_d1
       },
       {
         label: "Década 2000-09",
+        borderColor: "rgba(252, 252, 150, 0.9)",
+        backgroundColor: "rgba(252, 252, 150, 0.7)",
         data: prom_d2
       },
       {
         label: "Década 2010-19 + 2020-22",
+        borderColor: "rgba(0, 34, 255, 0.9)",
+        backgroundColor: "rgba(0, 34, 255, 0.5)",
         data: prom_d3
       }
     ]
@@ -340,7 +346,7 @@ function thirdGraph() {
         {
             label: 'Precipitaciones',
             data: prec,
-            borderColor: 'rgba(0, 0, 265, 0.5)',
+            borderColor: 'rgba(0, 34, 255, 0.5)',
             tension: .5,
             pointBorderWidth: 3,
             fill: false
