@@ -110,7 +110,6 @@ function radarGraph() {
 
 function r_calculate(data, prov, type) {
   for (let i = 0; i < data.months.length; i++) {
-    console.log(data.months[i].prov[Number(prov)], i, type)
     r_SelectType(data.months[i].prov[Number(prov)], i, type)
   }
 }
